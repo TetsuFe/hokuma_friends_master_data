@@ -13,7 +13,7 @@ class CreateStory extends Migration
      */
     public function up()
     {
-        Schema::create('story', function (Blueprint $table) {
+        Schema::create('stories', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->string('sentences');
@@ -29,6 +29,6 @@ class CreateStory extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('story');
+        Schema::dropIfExists('stories');
     }
 }
